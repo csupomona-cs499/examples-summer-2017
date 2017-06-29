@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:adjustViewBounds="true"
+        android:layout_weight="20"
+        android:src="@drawable/user_1_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/friendNameTextView"
+            android:textStyle="bold"
+            android:text="Name"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/numTextView"
+            android:textSize="18sp"
+            android:text="22 mutual friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="5dp"
+        android:background="#42b6f4"
+        android:layout_gravity="center"
+        android:layout_weight="30"
+        android:id="@+id/addFriendButton"
+        android:text="Add Friend"
+        android:textColor="#FFFFFF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
