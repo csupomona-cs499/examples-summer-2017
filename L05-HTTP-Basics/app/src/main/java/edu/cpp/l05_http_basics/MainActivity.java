@@ -8,6 +8,8 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,6 +22,7 @@ import java.net.URL;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import edu.cpp.l05_http_basics.data.WeatherResponse;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,20 +47,19 @@ public class MainActivity extends AppCompatActivity {
         Log.i("TEST", "onSend");
 //        progress = ProgressDialog.show(this, "Loading the URL",
 //                "Please wait ...", true);
-        sendButton.setEnabled(false);
-
+        //sendButton.setEnabled(false);
 
         AsyncTask<Void, Void, Void> loadURLTask = new AsyncTask<Void, Void, Void>() {
 
             private String totalStr;
-
+            private WeatherResponse response;
 
             @Override
             protected Void doInBackground(Void... voids) {
                 Log.i("TEST", "start background work");
                 URL url = null;
                 try {
-                    url = new URL("http://www.google.com/");
+                    url = new URL("http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1");
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -73,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                     totalStr = total.toString();
                     Log.i("TEST", "total: " + totalStr);
+
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    response = objectMapper.readValue(totalStr, WeatherResponse.class);
+                    Log.i("TEST", "response: " + response.getMainData().getTemp());
                 } catch (IOException e) {
                     e.printStackTrace();
                 } finally {
@@ -89,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
-                responseTextView.setText(totalStr);
+                responseTextView.setText(response.getWind().getSpeed() + " : " + response.getWind().getDeg());
                 //progress.dismiss();
                 sendButton.setEnabled(true);
             }
