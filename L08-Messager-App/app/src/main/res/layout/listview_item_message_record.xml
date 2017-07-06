@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAlignment="viewEnd"
+            android:textSize="16sp"
+            android:textColor="#3e3f42"
+            android:text="Chat Message"
+            android:id="@+id/messageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="12sp"
+            android:text="7/5/2017 18:05pm"
+            android:id="@+id/timeDateTextView"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:src="@drawable/user_placeholder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
