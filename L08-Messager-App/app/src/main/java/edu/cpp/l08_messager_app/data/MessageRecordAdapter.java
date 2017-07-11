@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -46,13 +48,23 @@ public class MessageRecordAdapter extends ArrayAdapter<MessageRecord> {
         } else {
             view = layoutInflater.inflate(R.layout.listview_item_message_record_rec, parent, false);
         }
-        TextView messageTextView = (TextView) view.findViewById(R.id.messageTextView);
-        messageTextView.setText(messageRecords.get(position).getText());
+
+        if (messageRecords.get(position).getText() != null) {
+            TextView messageTextView = (TextView) view.findViewById(R.id.messageTextView);
+            messageTextView.setText(messageRecords.get(position).getText());
+        }
         TextView timeDateTextView = (TextView) view.findViewById(R.id.timeDateTextView);
 
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date(messageRecords.get(position).getTimestamp());
         timeDateTextView.setText(sf.format(date));
+
+        ImageView chatImageView = (ImageView) view.findViewById(R.id.messageImageView);
+        if (messageRecords.get(position).getImageUrl() != null) {
+            Picasso.with(context).load(messageRecords.get(position).getImageUrl()).into(chatImageView);
+        } else {
+            chatImageView.setVisibility(View.GONE);
+        }
 
         ImageView userImageView = (ImageView) view.findViewById(R.id.iconImageView);
         userImageView.setOnClickListener(new View.OnClickListener() {

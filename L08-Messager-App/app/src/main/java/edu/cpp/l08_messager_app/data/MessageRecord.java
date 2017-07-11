@@ -9,6 +9,7 @@ public class MessageRecord {
     private String text;
     private String senderUid;
     private long timestamp;
+    private String imageUrl;
 
     public String getText() {
         return text;
@@ -32,5 +33,13 @@ public class MessageRecord {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

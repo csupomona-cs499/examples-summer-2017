@@ -14,23 +14,39 @@
     </ListView>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/messageEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:hint="Type Your Message Here ..." />
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/chatImageView"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="8"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/takePhotoAndSendButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I" />
 
         <Button
             android:id="@+id/sendButton"
-            android:text="Send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="S" />
 
     </LinearLayout>
 
