@@ -1,0 +1,620 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/yusun/.nvm/versions/node/v5.11.0/bin/node',
+1 verbose cli   '/Users/yusun/.nvm/versions/node/v5.11.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'sleep',
+1 verbose cli   '--save' ]
+2 info using npm@3.8.6
+3 info using node@v5.11.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData sleep
+8 silly fetchNamedPackageData sleep
+9 silly mapToRegistry name sleep
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'sleep',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'sleep',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/sleep
+14 verbose request uri https://registry.npmjs.org/sleep
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:51:44 PM
+17 verbose request id 0759a69bdba07421
+18 verbose etag W/"594796d3-56ea"
+19 verbose lastModified Mon, 19 Jun 2017 09:18:11 GMT
+20 http request GET https://registry.npmjs.org/sleep
+21 http 304 https://registry.npmjs.org/sleep
+22 verbose headers { date: 'Thu, 13 Jul 2017 00:51:44 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"594796d3-56ea"',
+22 verbose headers   age: '25',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-lax8641-LAX',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1499907105.592511,VS0,VE1',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 13 Jul 2017 00:51:44 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"594796d3-56ea"',
+23 silly get     age: '25',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-lax8641-LAX',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1499907105.592511,VS0,VE1',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose etag https://registry.npmjs.org/sleep from cache
+25 verbose get saving sleep to /Users/yusun/.npm/registry.npmjs.org/sleep/.cache.json
+26 verbose correctMkdir /Users/yusun/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule sleep@5.1.1 checking installable status
+40 silly cache add args [ 'sleep', null ]
+41 verbose cache add spec sleep
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'sleep',
+42 silly cache add   scope: null,
+42 silly cache add   name: 'sleep',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed sleep@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for sleep
+45 info addNameTag [ 'sleep', 'latest' ]
+46 silly mapToRegistry name sleep
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'sleep',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   name: 'sleep',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/sleep
+51 verbose addNameTag registry:https://registry.npmjs.org/sleep not in flight; fetching
+52 verbose get https://registry.npmjs.org/sleep not expired, no request
+53 silly addNameTag next cb for sleep with tag latest
+54 silly addNamed sleep@5.1.1
+55 verbose addNamed "5.1.1" is a plain semver version for sleep
+56 silly cache afterAdd sleep@5.1.1
+57 verbose afterAdd /Users/yusun/.npm/sleep/5.1.1/package/package.json not in flight; writing
+58 verbose correctMkdir /Users/yusun/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /Users/yusun/.npm/sleep/5.1.1/package/package.json written
+60 silly fetchNamedPackageData nan
+61 silly mapToRegistry name nan
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'nan',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   name: 'nan',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/nan
+66 verbose request uri https://registry.npmjs.org/nan
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 5:51:44 PM
+69 verbose etag W/"592dfb8f-1f9f8"
+70 verbose lastModified Tue, 30 May 2017 23:09:03 GMT
+71 http request GET https://registry.npmjs.org/nan
+72 http 304 https://registry.npmjs.org/nan
+73 verbose headers { date: 'Thu, 13 Jul 2017 00:51:44 GMT',
+73 verbose headers   via: '1.1 varnish',
+73 verbose headers   'cache-control': 'max-age=300',
+73 verbose headers   etag: 'W/"592dfb8f-1f9f8"',
+73 verbose headers   age: '107',
+73 verbose headers   connection: 'keep-alive',
+73 verbose headers   'x-served-by': 'cache-lax8641-LAX',
+73 verbose headers   'x-cache': 'HIT',
+73 verbose headers   'x-cache-hits': '1',
+73 verbose headers   'x-timer': 'S1499907105.683664,VS0,VE1',
+73 verbose headers   vary: 'Accept-Encoding' }
+74 silly get cb [ 304,
+74 silly get   { date: 'Thu, 13 Jul 2017 00:51:44 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     'cache-control': 'max-age=300',
+74 silly get     etag: 'W/"592dfb8f-1f9f8"',
+74 silly get     age: '107',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-lax8641-LAX',
+74 silly get     'x-cache': 'HIT',
+74 silly get     'x-cache-hits': '1',
+74 silly get     'x-timer': 'S1499907105.683664,VS0,VE1',
+74 silly get     vary: 'Accept-Encoding' } ]
+75 verbose etag https://registry.npmjs.org/nan from cache
+76 verbose get saving nan to /Users/yusun/.npm/registry.npmjs.org/nan/.cache.json
+77 verbose correctMkdir /Users/yusun/.npm correctMkdir not in flight; initializing
+78 silly resolveWithNewModule nan@2.6.2 checking installable status
+79 silly cache add args [ 'nan@>=2.5.1', null ]
+80 verbose cache add spec nan@>=2.5.1
+81 silly cache add parsed spec Result {
+81 silly cache add   raw: 'nan@>=2.5.1',
+81 silly cache add   scope: null,
+81 silly cache add   name: 'nan',
+81 silly cache add   rawSpec: '>=2.5.1',
+81 silly cache add   spec: '>=2.5.1',
+81 silly cache add   type: 'range' }
+82 silly addNamed nan@>=2.5.1
+83 verbose addNamed ">=2.5.1" is a valid semver range for nan
+84 silly addNameRange { name: 'nan', range: '>=2.5.1', hasData: false }
+85 silly mapToRegistry name nan
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: 'nan',
+88 silly mapToRegistry   scope: null,
+88 silly mapToRegistry   name: 'nan',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag' }
+89 silly mapToRegistry uri https://registry.npmjs.org/nan
+90 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+91 verbose get https://registry.npmjs.org/nan not expired, no request
+92 silly addNameRange number 2 { name: 'nan', range: '>=2.5.1', hasData: true }
+93 silly addNameRange versions [ 'nan',
+93 silly addNameRange   [ '0.3.0-wip',
+93 silly addNameRange     '0.3.0-wip2',
+93 silly addNameRange     '0.3.0',
+93 silly addNameRange     '0.3.1',
+93 silly addNameRange     '0.3.2',
+93 silly addNameRange     '0.4.0',
+93 silly addNameRange     '0.4.1',
+93 silly addNameRange     '0.4.2',
+93 silly addNameRange     '0.4.3',
+93 silly addNameRange     '0.4.4',
+93 silly addNameRange     '0.5.0',
+93 silly addNameRange     '0.5.1',
+93 silly addNameRange     '0.5.2',
+93 silly addNameRange     '0.6.0',
+93 silly addNameRange     '0.7.0',
+93 silly addNameRange     '0.7.1',
+93 silly addNameRange     '0.8.0',
+93 silly addNameRange     '1.0.0',
+93 silly addNameRange     '1.1.0',
+93 silly addNameRange     '1.1.1',
+93 silly addNameRange     '1.1.2',
+93 silly addNameRange     '1.2.0',
+93 silly addNameRange     '1.3.0',
+93 silly addNameRange     '1.4.0',
+93 silly addNameRange     '1.4.1',
+93 silly addNameRange     '1.5.0',
+93 silly addNameRange     '1.4.2',
+93 silly addNameRange     '1.4.3',
+93 silly addNameRange     '1.5.1',
+93 silly addNameRange     '1.5.2',
+93 silly addNameRange     '1.6.0',
+93 silly addNameRange     '1.5.3',
+93 silly addNameRange     '1.6.1',
+93 silly addNameRange     '1.6.2',
+93 silly addNameRange     '1.7.0',
+93 silly addNameRange     '1.8.0',
+93 silly addNameRange     '1.8.1',
+93 silly addNameRange     '1.8.2',
+93 silly addNameRange     '1.8.3',
+93 silly addNameRange     '1.8.4',
+93 silly addNameRange     '1.9.0',
+93 silly addNameRange     '2.0.0',
+93 silly addNameRange     '2.0.1',
+93 silly addNameRange     '2.0.2',
+93 silly addNameRange     '2.0.3',
+93 silly addNameRange     '2.0.4',
+93 silly addNameRange     '2.0.5',
+93 silly addNameRange     '2.0.6',
+93 silly addNameRange     '2.0.7',
+93 silly addNameRange     '2.0.8',
+93 silly addNameRange     '2.0.9',
+93 silly addNameRange     '2.1.0',
+93 silly addNameRange     '2.2.0',
+93 silly addNameRange     '2.2.1',
+93 silly addNameRange     '2.3.0',
+93 silly addNameRange     '2.3.1',
+93 silly addNameRange     '2.3.2',
+93 silly addNameRange     '2.3.3',
+93 silly addNameRange     '2.3.4',
+93 silly addNameRange     '2.3.5',
+93 silly addNameRange     '2.4.0',
+93 silly addNameRange     '2.5.0',
+93 silly addNameRange     '2.5.1',
+93 silly addNameRange     '2.6.0',
+93 silly addNameRange     '2.6.1',
+93 silly addNameRange     '2.6.2' ] ]
+94 silly addNamed nan@2.6.2
+95 verbose addNamed "2.6.2" is a plain semver version for nan
+96 silly cache afterAdd nan@2.6.2
+97 verbose afterAdd /Users/yusun/.npm/nan/2.6.2/package/package.json not in flight; writing
+98 verbose correctMkdir /Users/yusun/.npm correctMkdir not in flight; initializing
+99 verbose afterAdd /Users/yusun/.npm/nan/2.6.2/package/package.json written
+100 silly loadAllDepsIntoIdealTree Finishing
+101 silly idealTree:prePrune web-demo@1.0.0
+101 silly idealTree:prePrune ├── accepts@1.3.3
+101 silly idealTree:prePrune ├── array-flatten@1.1.1
+101 silly idealTree:prePrune ├── content-disposition@0.5.2
+101 silly idealTree:prePrune ├── content-type@1.0.2
+101 silly idealTree:prePrune ├── cookie-signature@1.0.6
+101 silly idealTree:prePrune ├── cookie@0.3.1
+101 silly idealTree:prePrune ├── debug@2.6.7
+101 silly idealTree:prePrune ├── depd@1.1.0
+101 silly idealTree:prePrune ├── destroy@1.0.4
+101 silly idealTree:prePrune ├── ee-first@1.1.1
+101 silly idealTree:prePrune ├── encodeurl@1.0.1
+101 silly idealTree:prePrune ├── escape-html@1.0.3
+101 silly idealTree:prePrune ├── etag@1.8.0
+101 silly idealTree:prePrune ├── express@4.15.3
+101 silly idealTree:prePrune ├── finalhandler@1.0.3
+101 silly idealTree:prePrune ├── forwarded@0.1.0
+101 silly idealTree:prePrune ├── fresh@0.5.0
+101 silly idealTree:prePrune ├── http-errors@1.6.1
+101 silly idealTree:prePrune ├── inherits@2.0.3
+101 silly idealTree:prePrune ├── ipaddr.js@1.3.0
+101 silly idealTree:prePrune ├── media-typer@0.3.0
+101 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+101 silly idealTree:prePrune ├── methods@1.1.2
+101 silly idealTree:prePrune ├── mime-db@1.27.0
+101 silly idealTree:prePrune ├── mime-types@2.1.15
+101 silly idealTree:prePrune ├── mime@1.3.4
+101 silly idealTree:prePrune ├── ms@2.0.0
+101 silly idealTree:prePrune ├── nan@2.6.2
+101 silly idealTree:prePrune ├── negotiator@0.6.1
+101 silly idealTree:prePrune ├── on-finished@2.3.0
+101 silly idealTree:prePrune ├── parseurl@1.3.1
+101 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+101 silly idealTree:prePrune ├── proxy-addr@1.1.4
+101 silly idealTree:prePrune ├── qs@6.4.0
+101 silly idealTree:prePrune ├── range-parser@1.2.0
+101 silly idealTree:prePrune ├── send@0.15.3
+101 silly idealTree:prePrune ├── serve-static@1.12.3
+101 silly idealTree:prePrune ├── setprototypeof@1.0.3
+101 silly idealTree:prePrune ├── sleep@5.1.1
+101 silly idealTree:prePrune ├── statuses@1.3.1
+101 silly idealTree:prePrune ├── type-is@1.6.15
+101 silly idealTree:prePrune ├── unpipe@1.0.0
+101 silly idealTree:prePrune ├── utils-merge@1.0.0
+101 silly idealTree:prePrune ├── uuid@3.1.0
+101 silly idealTree:prePrune └── vary@1.1.1
+102 silly loadIdealTree Finishing
+103 silly currentTree web-demo@1.0.0
+103 silly currentTree ├── accepts@1.3.3
+103 silly currentTree ├── array-flatten@1.1.1
+103 silly currentTree ├── content-disposition@0.5.2
+103 silly currentTree ├── content-type@1.0.2
+103 silly currentTree ├── cookie-signature@1.0.6
+103 silly currentTree ├── cookie@0.3.1
+103 silly currentTree ├── debug@2.6.7
+103 silly currentTree ├── depd@1.1.0
+103 silly currentTree ├── destroy@1.0.4
+103 silly currentTree ├── ee-first@1.1.1
+103 silly currentTree ├── encodeurl@1.0.1
+103 silly currentTree ├── escape-html@1.0.3
+103 silly currentTree ├── etag@1.8.0
+103 silly currentTree ├── express@4.15.3
+103 silly currentTree ├── finalhandler@1.0.3
+103 silly currentTree ├── forwarded@0.1.0
+103 silly currentTree ├── fresh@0.5.0
+103 silly currentTree ├── http-errors@1.6.1
+103 silly currentTree ├── inherits@2.0.3
+103 silly currentTree ├── ipaddr.js@1.3.0
+103 silly currentTree ├── media-typer@0.3.0
+103 silly currentTree ├── merge-descriptors@1.0.1
+103 silly currentTree ├── methods@1.1.2
+103 silly currentTree ├── mime-db@1.27.0
+103 silly currentTree ├── mime-types@2.1.15
+103 silly currentTree ├── mime@1.3.4
+103 silly currentTree ├── ms@2.0.0
+103 silly currentTree ├── negotiator@0.6.1
+103 silly currentTree ├── on-finished@2.3.0
+103 silly currentTree ├── parseurl@1.3.1
+103 silly currentTree ├── path-to-regexp@0.1.7
+103 silly currentTree ├── proxy-addr@1.1.4
+103 silly currentTree ├── qs@6.4.0
+103 silly currentTree ├── range-parser@1.2.0
+103 silly currentTree ├── send@0.15.3
+103 silly currentTree ├── serve-static@1.12.3
+103 silly currentTree ├── setprototypeof@1.0.3
+103 silly currentTree ├── statuses@1.3.1
+103 silly currentTree ├── type-is@1.6.15
+103 silly currentTree ├── unpipe@1.0.0
+103 silly currentTree ├── utils-merge@1.0.0
+103 silly currentTree ├── uuid@3.1.0
+103 silly currentTree └── vary@1.1.1
+104 silly idealTree web-demo@1.0.0
+104 silly idealTree ├── accepts@1.3.3
+104 silly idealTree ├── array-flatten@1.1.1
+104 silly idealTree ├── content-disposition@0.5.2
+104 silly idealTree ├── content-type@1.0.2
+104 silly idealTree ├── cookie-signature@1.0.6
+104 silly idealTree ├── cookie@0.3.1
+104 silly idealTree ├── debug@2.6.7
+104 silly idealTree ├── depd@1.1.0
+104 silly idealTree ├── destroy@1.0.4
+104 silly idealTree ├── ee-first@1.1.1
+104 silly idealTree ├── encodeurl@1.0.1
+104 silly idealTree ├── escape-html@1.0.3
+104 silly idealTree ├── etag@1.8.0
+104 silly idealTree ├── express@4.15.3
+104 silly idealTree ├── finalhandler@1.0.3
+104 silly idealTree ├── forwarded@0.1.0
+104 silly idealTree ├── fresh@0.5.0
+104 silly idealTree ├── http-errors@1.6.1
+104 silly idealTree ├── inherits@2.0.3
+104 silly idealTree ├── ipaddr.js@1.3.0
+104 silly idealTree ├── media-typer@0.3.0
+104 silly idealTree ├── merge-descriptors@1.0.1
+104 silly idealTree ├── methods@1.1.2
+104 silly idealTree ├── mime-db@1.27.0
+104 silly idealTree ├── mime-types@2.1.15
+104 silly idealTree ├── mime@1.3.4
+104 silly idealTree ├── ms@2.0.0
+104 silly idealTree ├── nan@2.6.2
+104 silly idealTree ├── negotiator@0.6.1
+104 silly idealTree ├── on-finished@2.3.0
+104 silly idealTree ├── parseurl@1.3.1
+104 silly idealTree ├── path-to-regexp@0.1.7
+104 silly idealTree ├── proxy-addr@1.1.4
+104 silly idealTree ├── qs@6.4.0
+104 silly idealTree ├── range-parser@1.2.0
+104 silly idealTree ├── send@0.15.3
+104 silly idealTree ├── serve-static@1.12.3
+104 silly idealTree ├── setprototypeof@1.0.3
+104 silly idealTree ├── sleep@5.1.1
+104 silly idealTree ├── statuses@1.3.1
+104 silly idealTree ├── type-is@1.6.15
+104 silly idealTree ├── unpipe@1.0.0
+104 silly idealTree ├── utils-merge@1.0.0
+104 silly idealTree ├── uuid@3.1.0
+104 silly idealTree └── vary@1.1.1
+105 silly generateActionsToTake Starting
+106 silly install generateActionsToTake
+107 silly generateActionsToTake Finishing
+108 silly diffTrees action count 2
+109 silly diffTrees add nan@2.6.2
+110 silly diffTrees add sleep@5.1.1
+111 silly decomposeActions action count 16
+112 silly decomposeActions fetch nan@2.6.2
+113 silly decomposeActions extract nan@2.6.2
+114 silly decomposeActions test nan@2.6.2
+115 silly decomposeActions preinstall nan@2.6.2
+116 silly decomposeActions build nan@2.6.2
+117 silly decomposeActions install nan@2.6.2
+118 silly decomposeActions postinstall nan@2.6.2
+119 silly decomposeActions finalize nan@2.6.2
+120 silly decomposeActions fetch sleep@5.1.1
+121 silly decomposeActions extract sleep@5.1.1
+122 silly decomposeActions test sleep@5.1.1
+123 silly decomposeActions preinstall sleep@5.1.1
+124 silly decomposeActions build sleep@5.1.1
+125 silly decomposeActions install sleep@5.1.1
+126 silly decomposeActions postinstall sleep@5.1.1
+127 silly decomposeActions finalize sleep@5.1.1
+128 silly executeActions Starting
+129 silly install executeActions
+130 silly doSerial global-install 0
+131 silly doParallel fetch 2
+132 verbose correctMkdir /Users/yusun/.npm/_locks correctMkdir not in flight; initializing
+133 verbose lock using /Users/yusun/.npm/_locks/staging-b9b6e2fe3fe3dd84.lock for /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging
+134 silly doParallel extract 2
+135 silly extract nan@2.6.2
+136 silly extract sleep@5.1.1
+137 verbose unbuild node_modules/.staging/nan-5cff5b79
+138 verbose unbuild node_modules/.staging/sleep-7e306804
+139 silly gentlyRm /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79 is being purged from base /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server
+140 verbose gentlyRm don't care about contents; nuking /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79
+141 silly gentlyRm /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804 is being purged from base /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server
+142 verbose gentlyRm don't care about contents; nuking /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804
+143 verbose tar unpack /Users/yusun/.npm/nan/2.6.2/package.tgz
+144 verbose tar unpacking to /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79
+145 silly gentlyRm /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79 is being purged
+146 verbose gentlyRm don't care about contents; nuking /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79
+147 verbose tar unpack /Users/yusun/.npm/sleep/5.1.1/package.tgz
+148 verbose tar unpacking to /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804
+149 silly gentlyRm /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804 is being purged
+150 verbose gentlyRm don't care about contents; nuking /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804
+151 silly gunzTarPerm modes [ '755', '644' ]
+152 silly gunzTarPerm modes [ '755', '644' ]
+153 silly gunzTarPerm extractEntry package.json
+154 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+155 silly gunzTarPerm extractEntry package.json
+156 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+157 silly gunzTarPerm extractEntry README.md
+158 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+159 silly gunzTarPerm extractEntry .npmignore
+160 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+161 silly gunzTarPerm extractEntry README.md
+162 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+163 silly gunzTarPerm extractEntry include_dirs.js
+164 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+165 silly gunzTarPerm extractEntry test.js
+166 silly gunzTarPerm modified mode [ 'test.js', 436, 420 ]
+167 silly gunzTarPerm extractEntry index.js
+168 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+169 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+170 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+171 silly gunzTarPerm extractEntry LICENSE.md
+172 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+173 silly gunzTarPerm extractEntry doc/new.md
+174 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+175 silly gunzTarPerm extractEntry doc/asyncworker.md
+176 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+177 silly gunzTarPerm extractEntry LICENSE.txt
+178 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 420 ]
+179 silly gunzTarPerm extractEntry sleep.cc
+180 silly gunzTarPerm modified mode [ 'sleep.cc', 436, 420 ]
+181 silly gunzTarPerm extractEntry doc/callback.md
+182 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+183 silly gunzTarPerm extractEntry doc/converters.md
+184 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+185 silly gunzTarPerm extractEntry binding.gyp
+186 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+187 silly gunzTarPerm extractEntry doc/errors.md
+188 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+189 silly gunzTarPerm extractEntry doc/json.md
+190 silly gunzTarPerm modified mode [ 'doc/json.md', 436, 420 ]
+191 silly gunzTarPerm extractEntry doc/maybe_types.md
+192 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+193 silly gunzTarPerm extractEntry doc/methods.md
+194 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+195 silly gunzTarPerm extractEntry doc/buffers.md
+196 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+197 silly gunzTarPerm extractEntry doc/node_misc.md
+198 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+199 silly gunzTarPerm extractEntry doc/object_wrappers.md
+200 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+201 silly gunzTarPerm extractEntry doc/persistent.md
+202 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+203 silly gunzTarPerm extractEntry doc/scopes.md
+204 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+205 silly gunzTarPerm extractEntry doc/script.md
+206 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+207 silly gunzTarPerm extractEntry doc/string_bytes.md
+208 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+209 silly gentlyRm /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804/node_modules is being purged
+210 verbose gentlyRm don't care about contents; nuking /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804/node_modules
+211 silly gunzTarPerm extractEntry doc/v8_internals.md
+212 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+213 silly gunzTarPerm extractEntry doc/v8_misc.md
+214 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+215 silly gunzTarPerm extractEntry nan.h
+216 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+217 silly gunzTarPerm extractEntry nan_callbacks.h
+218 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+219 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+220 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+221 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+222 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+223 silly gunzTarPerm extractEntry nan_converters.h
+224 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+225 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+226 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+227 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+228 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+229 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+230 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+231 silly gunzTarPerm extractEntry nan_json.h
+232 silly gunzTarPerm modified mode [ 'nan_json.h', 436, 420 ]
+233 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+234 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+235 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+236 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+237 silly gunzTarPerm extractEntry nan_new.h
+238 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+239 silly gunzTarPerm extractEntry nan_object_wrap.h
+240 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+241 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+242 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+243 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+244 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+245 silly gunzTarPerm extractEntry nan_private.h
+246 silly gunzTarPerm modified mode [ 'nan_private.h', 436, 420 ]
+247 silly gunzTarPerm extractEntry nan_string_bytes.h
+248 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+249 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+250 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+251 silly gunzTarPerm extractEntry nan_weak.h
+252 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+253 silly gunzTarPerm extractEntry CHANGELOG.md
+254 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+255 silly gunzTarPerm extractEntry tools/package.json
+256 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+257 silly gunzTarPerm extractEntry tools/README.md
+258 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+259 silly gunzTarPerm extractEntry tools/1to2.js
+260 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+261 silly gentlyRm /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79/node_modules is being purged
+262 verbose gentlyRm don't care about contents; nuking /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79/node_modules
+263 silly doParallel preinstall 2
+264 silly preinstall nan@2.6.2 /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79
+265 info lifecycle nan@2.6.2~preinstall: nan@2.6.2
+266 silly preinstall sleep@5.1.1 /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804
+267 info lifecycle sleep@5.1.1~preinstall: sleep@5.1.1
+268 silly lifecycle nan@2.6.2~preinstall: no script for preinstall, continuing
+269 silly lifecycle sleep@5.1.1~preinstall: no script for preinstall, continuing
+270 silly doReverseSerial remove 0
+271 silly doSerial move 0
+272 silly doSerial finalize 2
+273 silly finalize /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/nan
+274 silly finalize /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/sleep
+275 silly doSerial build 2
+276 silly build nan@2.6.2
+277 info linkStuff nan@2.6.2
+278 silly linkStuff nan@2.6.2 has /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules as its parent node_modules
+279 verbose linkBins nan@2.6.2
+280 verbose linkMans nan@2.6.2
+281 silly build sleep@5.1.1
+282 info linkStuff sleep@5.1.1
+283 silly linkStuff sleep@5.1.1 has /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules as its parent node_modules
+284 verbose linkBins sleep@5.1.1
+285 verbose linkMans sleep@5.1.1
+286 silly doSerial global-link 0
+287 silly doParallel update-linked 0
+288 silly doSerial install 2
+289 silly install nan@2.6.2 /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/nan-5cff5b79
+290 info lifecycle nan@2.6.2~install: nan@2.6.2
+291 silly lifecycle nan@2.6.2~install: no script for install, continuing
+292 silly install sleep@5.1.1 /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging/sleep-7e306804
+293 info lifecycle sleep@5.1.1~install: sleep@5.1.1
+294 verbose lifecycle sleep@5.1.1~install: unsafe-perm in lifecycle false
+295 verbose lifecycle sleep@5.1.1~install: PATH: /Users/yusun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/sleep/node_modules/.bin:/Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.bin:/Users/yusun/.nvm/versions/node/v5.11.0/bin:/Users/yusun/anaconda/bin:/Users/yusun/.nvm/versions/node/v5.11.0/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yusun/workspace/util-scripts:/Users/yusun/Library/Android/sdk/tools:/Users/yusun/Library/Android/sdk/platform-tools
+296 verbose lifecycle sleep@5.1.1~install: CWD: /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/sleep
+297 silly lifecycle sleep@5.1.1~install: Args: [ '-c', 'node-gyp rebuild' ]
+298 silly lifecycle sleep@5.1.1~install: Returned: code: 1  signal: null
+299 info lifecycle sleep@5.1.1~install: Failed to exec install script
+300 verbose unlock done using /Users/yusun/.npm/_locks/staging-b9b6e2fe3fe3dd84.lock for /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server/node_modules/.staging
+301 silly rollbackFailedOptional Starting
+302 silly rollbackFailedOptional Finishing
+303 silly runTopLevelLifecycles Starting
+304 silly runTopLevelLifecycles Finishing
+305 silly install printInstalled
+306 warn web-demo@1.0.0 No description
+307 warn web-demo@1.0.0 No repository field.
+308 verbose stack Error: sleep@5.1.1 install: `node-gyp rebuild`
+308 verbose stack Exit status 1
+308 verbose stack     at EventEmitter.<anonymous> (/Users/yusun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+308 verbose stack     at emitTwo (events.js:100:13)
+308 verbose stack     at EventEmitter.emit (events.js:185:7)
+308 verbose stack     at ChildProcess.<anonymous> (/Users/yusun/.nvm/versions/node/v5.11.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+308 verbose stack     at emitTwo (events.js:100:13)
+308 verbose stack     at ChildProcess.emit (events.js:185:7)
+308 verbose stack     at maybeClose (internal/child_process.js:850:16)
+308 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+309 verbose pkgid sleep@5.1.1
+310 verbose cwd /Users/yusun/workspace/cs499/examples-summer-2017/L10-Web-Server
+311 error Darwin 16.6.0
+312 error argv "/Users/yusun/.nvm/versions/node/v5.11.0/bin/node" "/Users/yusun/.nvm/versions/node/v5.11.0/bin/npm" "install" "sleep" "--save"
+313 error node v5.11.0
+314 error npm  v3.8.6
+315 error code ELIFECYCLE
+316 error sleep@5.1.1 install: `node-gyp rebuild`
+316 error Exit status 1
+317 error Failed at the sleep@5.1.1 install script 'node-gyp rebuild'.
+317 error Make sure you have the latest version of node.js and npm installed.
+317 error If you do, this is most likely a problem with the sleep package,
+317 error not with npm itself.
+317 error Tell the author that this fails on your system:
+317 error     node-gyp rebuild
+317 error You can get information on how to open an issue for this project with:
+317 error     npm bugs sleep
+317 error Or if that isn't available, you can get their info via:
+317 error     npm owner ls sleep
+317 error There is likely additional logging output above.
+318 verbose exit [ 1, true ]

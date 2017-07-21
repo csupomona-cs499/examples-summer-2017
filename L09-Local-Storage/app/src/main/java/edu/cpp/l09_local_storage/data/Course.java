@@ -1,11 +1,8 @@
 package edu.cpp.l09_local_storage.data;
 
-import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import static android.R.attr.id;
 
 /**
  * Created by yusun on 7/10/17.
@@ -13,8 +10,9 @@ import static android.R.attr.id;
 
 @Table(name = "course")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Course extends Model {
+public class Course {
 
+    private String id;
     @Column(name = "courseName")
     private String courseName;
     @Column(name = "courseId")
@@ -48,5 +46,13 @@ public class Course extends Model {
 
     public String toString() {
         return id + ", " + courseName + ", " + courseId + ", " + courseCredit;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
 }

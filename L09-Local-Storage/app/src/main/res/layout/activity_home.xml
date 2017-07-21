@@ -6,24 +6,28 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:visibility="gone"
         android:id="@+id/courseNameEditText"
         android:hint="Course Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
+        android:visibility="gone"
         android:id="@+id/courseIdEditText"
         android:hint="Course ID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
+        android:visibility="gone"
         android:id="@+id/courseCreditEditText"
         android:hint="Course Credit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
+        android:visibility="gone"
         android:text="Add"
         android:id="@+id/addButton"
         android:layout_width="match_parent"

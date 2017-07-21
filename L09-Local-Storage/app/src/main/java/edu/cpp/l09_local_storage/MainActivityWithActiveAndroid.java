@@ -2,13 +2,8 @@ package edu.cpp.l09_local_storage;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-
-import com.activeandroid.query.Select;
-
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,9 +32,9 @@ public class MainActivityWithActiveAndroid extends AppCompatActivity {
     }
 
     private void loadDataLocally() {
-        List<Course> courses = new Select().from(Course.class).execute();
-        ArrayAdapter<Course> courseAdapter = new ArrayAdapter<Course>(this, android.R.layout.simple_list_item_1, courses);
-        courseListView.setAdapter(courseAdapter);
+//        List<Course> courses = new Select().from(Course.class).execute();
+//        ArrayAdapter<Course> courseAdapter = new ArrayAdapter<Course>(this, android.R.layout.simple_list_item_1, courses);
+//        courseListView.setAdapter(courseAdapter);
     }
 
     @OnClick(R.id.addButton)
@@ -48,7 +43,7 @@ public class MainActivityWithActiveAndroid extends AppCompatActivity {
         c.setCourseName(courseNameEditText.getText().toString());
         c.setCourseId(courseIdEditText.getText().toString());
         c.setCourseCredit(Integer.parseInt(courseCreditEditText.getText().toString()));
-        c.save();
+        //c.save();
 
         loadDataLocally();
     }
